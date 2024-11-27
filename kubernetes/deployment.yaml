@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web-app-container
-        image: your-docker-image:latest 
+        image: nginx:alpine
         ports:
         - containerPort: 80
         resources:
@@ -26,7 +26,5 @@ spec:
           requests:
             memory: "256Mi"
             cpu: "250m"
-        env:
-        - name: ENV_VARIABLE_NAME
-          value: "value"
+        
 
